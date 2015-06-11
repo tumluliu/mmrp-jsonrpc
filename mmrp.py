@@ -43,33 +43,24 @@ jsonrpc = JSONRPC(app, '/api', enable_web_browsable_api=True)
 def index():
     return u'Welcome using Multimodal Route Planner (mmrp) JSON-RPC API'
 
-@jsonrpc.method('App.inferRoutingPlans')
-def infer_routing_plans(options):
-    logger.info("infer_routing_plans called")
-    logger.debug("argument options passed in is: %s", options)
-    inferer = RoutingPlanInferer()
-    inferer.load_routing_options_from_string(options)
-    plans = inferer.generate_routing_plan()
-    return json.dumps(plans)
+@jsonrpc.method('App.echo')
+def echo(input):
+    logger.debug("input value: %s", input)
+    return u'Receive {0}'.format(input)
 
 @jsonrpc.method('App.findMultimodalPaths')
 def find_multimodal_paths(options):
     inferer = RoutingPlanInferer()
-    inferer.load_routing_options_from_string(options)
+    inferer.load_routing_options(options)
     plans = inferer.generate_routing_plan()
     planner = MultimodalRoutePlanner()
     rough_results = planner.batch_find_path(plans)
     results = planner.refine_results(rough_results)
-    return json.dumps(results)
-
-@jsonrpc.method('App.notify')
-def notify(string):
-    pass
+    return results
 
 @jsonrpc.method('App.fails')
 def fails(string):
     raise ValueError
-
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
