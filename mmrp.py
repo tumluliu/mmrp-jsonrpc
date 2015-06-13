@@ -29,7 +29,7 @@ PROJECT_DIR, PROJECT_MODULE_NAME = os.path.split(
 
 FLASK_JSONRPC_PROJECT_DIR = os.path.join(PROJECT_DIR, os.pardir)
 if os.path.exists(FLASK_JSONRPC_PROJECT_DIR) \
-        and not FLASK_JSONRPC_PROJECT_DIR in sys.path:
+        and FLASK_JSONRPC_PROJECT_DIR not in sys.path:
     sys.path.append(FLASK_JSONRPC_PROJECT_DIR)
 
 from flask_jsonrpc import JSONRPC
@@ -39,16 +39,19 @@ from pymmrouting.inferenceengine import RoutingPlanInferer
 app = Flask(__name__)
 jsonrpc = JSONRPC(app, '/api', enable_web_browsable_api=True)
 
-@jsonrpc.method('App.index')
+
+@jsonrpc.method('mmrp.index')
 def index():
     return u'Welcome using Multimodal Route Planner (mmrp) JSON-RPC API'
 
-@jsonrpc.method('App.echo')
+
+@jsonrpc.method('mmrp.echo')
 def echo(input):
     logger.debug("input value: %s", input)
     return u'Receive {0}'.format(input)
 
-@jsonrpc.method('App.findMultimodalPaths')
+
+@jsonrpc.method('mmrp.findMultimodalPaths')
 def find_multimodal_paths(options):
     inferer = RoutingPlanInferer()
     inferer.load_routing_options(options)
@@ -58,7 +61,8 @@ def find_multimodal_paths(options):
     results = planner.refine_results(rough_results)
     return results
 
-@jsonrpc.method('App.fails')
+
+@jsonrpc.method('mmrp.fails')
 def fails(string):
     raise ValueError
 
