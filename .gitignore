@@ -60,3 +60,4 @@ target/
 *.un~
 *.swp
 *.swo
+.ropeproject
