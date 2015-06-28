@@ -61,3 +61,5 @@ target/
 *.swp
 *.swo
 .ropeproject
+
+config.json
