@@ -32,11 +32,13 @@ if os.path.exists(FLASK_JSONRPC_PROJECT_DIR) \
         and FLASK_JSONRPC_PROJECT_DIR not in sys.path:
     sys.path.append(FLASK_JSONRPC_PROJECT_DIR)
 
+from flask_cors import CORS
 from flask_jsonrpc import JSONRPC
 from pymmrouting.routeplanner import MultimodalRoutePlanner
 from pymmrouting.inferenceengine import RoutingPlanInferer
 
 app = Flask(__name__)
+cors = CORS(app)
 jsonrpc = JSONRPC(app, '/api', enable_web_browsable_api=True)
 
 
