@@ -1,8 +1,8 @@
 HTTP/1.0 200 OK
 Content-Type: application/json
-Content-Length: 196744
+Content-Length: 199256
 Server: Werkzeug/0.10.4 Python/2.7.10
-Date: Thu, 02 Jul 2015 09:46:10 GMT
+Date: Sat, 04 Jul 2015 05:51:59 GMT
 
 {
   "id": "1", 
@@ -2196,8 +2196,10 @@ Date: Thu, 02 Jul 2015 09:46:10 GMT
                 "type": "Point"
               }, 
               "properties": {
-                "name": null, 
+                "marker-size": "medium", 
+                "marker-symbol": "parking", 
                 "switch_type": "car_parking", 
+                "title": null, 
                 "type": "switch_point"
               }, 
               "type": "Feature"
@@ -2765,8 +2767,10 @@ Date: Thu, 02 Jul 2015 09:46:10 GMT
               "type": "Point"
             }, 
             "properties": {
-              "name": null, 
+              "marker-size": "medium", 
+              "marker-symbol": "parking", 
               "switch_type": "car_parking", 
+              "title": null, 
               "type": "switch_point"
             }, 
             "type": "Feature"
@@ -3072,9 +3076,11 @@ Date: Thu, 02 Jul 2015 09:46:10 GMT
               }, 
               "properties": {
                 "line": "U1", 
-                "name": "Stiglmaierplatz", 
+                "marker-size": "medium", 
+                "marker-symbol": "rail", 
                 "platform": "1", 
                 "switch_type": "underground_station", 
+                "title": "Stiglmaierplatz", 
                 "type": "switch_point"
               }, 
               "type": "Feature"
@@ -3274,9 +3280,11 @@ Date: Thu, 02 Jul 2015 09:46:10 GMT
               }, 
               "properties": {
                 "line": "U1", 
-                "name": "Rotkreuzplatz", 
+                "marker-size": "medium", 
+                "marker-symbol": "rail", 
                 "platform": "1", 
                 "switch_type": "underground_station", 
+                "title": "Rotkreuzplatz", 
                 "type": "switch_point"
               }, 
               "type": "Feature"
@@ -3384,9 +3392,11 @@ Date: Thu, 02 Jul 2015 09:46:10 GMT
               }, 
               "properties": {
                 "line": "", 
-                "name": "Volkartstra\u00dfe", 
+                "marker-size": "medium", 
+                "marker-symbol": "rail-metro", 
                 "platform": "", 
                 "switch_type": "tram_station", 
+                "title": "Volkartstra\u00dfe", 
                 "type": "switch_point"
               }, 
               "type": "Feature"
@@ -3578,9 +3588,11 @@ Date: Thu, 02 Jul 2015 09:46:10 GMT
               }, 
               "properties": {
                 "line": "", 
-                "name": "Romanplatz", 
+                "marker-size": "medium", 
+                "marker-symbol": "rail-metro", 
                 "platform": "", 
                 "switch_type": "tram_station", 
+                "title": "Romanplatz", 
                 "type": "switch_point"
               }, 
               "type": "Feature"
@@ -3905,9 +3917,11 @@ Date: Thu, 02 Jul 2015 09:46:10 GMT
             }, 
             "properties": {
               "line": "U1", 
-              "name": "Stiglmaierplatz", 
+              "marker-size": "medium", 
+              "marker-symbol": "rail", 
               "platform": "1", 
               "switch_type": "underground_station", 
+              "title": "Stiglmaierplatz", 
               "type": "switch_point"
             }, 
             "type": "Feature"
@@ -3922,9 +3936,11 @@ Date: Thu, 02 Jul 2015 09:46:10 GMT
             }, 
             "properties": {
               "line": "U1", 
-              "name": "Rotkreuzplatz", 
+              "marker-size": "medium", 
+              "marker-symbol": "rail", 
               "platform": "1", 
               "switch_type": "underground_station", 
+              "title": "Rotkreuzplatz", 
               "type": "switch_point"
             }, 
             "type": "Feature"
@@ -3939,9 +3955,11 @@ Date: Thu, 02 Jul 2015 09:46:10 GMT
             }, 
             "properties": {
               "line": "", 
-              "name": "Volkartstra\u00dfe", 
+              "marker-size": "medium", 
+              "marker-symbol": "rail-metro", 
               "platform": "", 
               "switch_type": "tram_station", 
+              "title": "Volkartstra\u00dfe", 
               "type": "switch_point"
             }, 
             "type": "Feature"
@@ -3956,9 +3974,11 @@ Date: Thu, 02 Jul 2015 09:46:10 GMT
             }, 
             "properties": {
               "line": "", 
-              "name": "Romanplatz", 
+              "marker-size": "medium", 
+              "marker-symbol": "rail-metro", 
               "platform": "", 
               "switch_type": "tram_station", 
+              "title": "Romanplatz", 
               "type": "switch_point"
             }, 
             "type": "Feature"
@@ -4655,8 +4675,10 @@ Date: Thu, 02 Jul 2015 09:46:10 GMT
                 "type": "Point"
               }, 
               "properties": {
-                "name": null, 
+                "marker-size": "medium", 
+                "marker-symbol": "parking", 
                 "switch_type": "car_parking", 
+                "title": null, 
                 "type": "switch_point"
               }, 
               "type": "Feature"
@@ -4752,9 +4774,11 @@ Date: Thu, 02 Jul 2015 09:46:10 GMT
               }, 
               "properties": {
                 "line": "", 
-                "name": "Donnersbergerstra\u00dfe", 
+                "marker-size": "medium", 
+                "marker-symbol": "rail-metro", 
                 "platform": "", 
                 "switch_type": "tram_station", 
+                "title": "Donnersbergerstra\u00dfe", 
                 "type": "switch_point"
               }, 
               "type": "Feature"
@@ -5098,9 +5122,11 @@ Date: Thu, 02 Jul 2015 09:46:10 GMT
               }, 
               "properties": {
                 "line": "", 
-                "name": "Schlo\u00df Nymphenburg", 
+                "marker-size": "medium", 
+                "marker-symbol": "rail-metro", 
                 "platform": "", 
                 "switch_type": "tram_station", 
+                "title": "Schlo\u00df Nymphenburg", 
                 "type": "switch_point"
               }, 
               "type": "Feature"
@@ -5360,8 +5386,10 @@ Date: Thu, 02 Jul 2015 09:46:10 GMT
               "type": "Point"
             }, 
             "properties": {
-              "name": null, 
+              "marker-size": "medium", 
+              "marker-symbol": "parking", 
               "switch_type": "car_parking", 
+              "title": null, 
               "type": "switch_point"
             }, 
             "type": "Feature"
@@ -5376,9 +5404,11 @@ Date: Thu, 02 Jul 2015 09:46:10 GMT
             }, 
             "properties": {
               "line": "", 
-              "name": "Donnersbergerstra\u00dfe", 
+              "marker-size": "medium", 
+              "marker-symbol": "rail-metro", 
               "platform": "", 
               "switch_type": "tram_station", 
+              "title": "Donnersbergerstra\u00dfe", 
               "type": "switch_point"
             }, 
             "type": "Feature"
@@ -5393,9 +5423,11 @@ Date: Thu, 02 Jul 2015 09:46:10 GMT
             }, 
             "properties": {
               "line": "", 
-              "name": "Schlo\u00df Nymphenburg", 
+              "marker-size": "medium", 
+              "marker-symbol": "rail-metro", 
               "platform": "", 
               "switch_type": "tram_station", 
+              "title": "Schlo\u00df Nymphenburg", 
               "type": "switch_point"
             }, 
             "type": "Feature"
@@ -6304,8 +6336,10 @@ Date: Thu, 02 Jul 2015 09:46:10 GMT
                 "type": "Point"
               }, 
               "properties": {
-                "name": "P+R Westfriedhof", 
+                "marker-size": "medium", 
+                "marker-symbol": "parking-garage", 
                 "switch_type": "park_and_ride", 
+                "title": "P+R Westfriedhof", 
                 "type": "switch_point"
               }, 
               "type": "Feature"
@@ -6573,9 +6607,11 @@ Date: Thu, 02 Jul 2015 09:46:10 GMT
               }, 
               "properties": {
                 "line": "U1", 
-                "name": "Rotkreuzplatz", 
+                "marker-size": "medium", 
+                "marker-symbol": "rail", 
                 "platform": "2", 
                 "switch_type": "underground_station", 
+                "title": "Rotkreuzplatz", 
                 "type": "switch_point"
               }, 
               "type": "Feature"
@@ -6683,9 +6719,11 @@ Date: Thu, 02 Jul 2015 09:46:10 GMT
               }, 
               "properties": {
                 "line": "", 
-                "name": "Volkartstra\u00dfe", 
+                "marker-size": "medium", 
+                "marker-symbol": "rail-metro", 
                 "platform": "", 
                 "switch_type": "tram_station", 
+                "title": "Volkartstra\u00dfe", 
                 "type": "switch_point"
               }, 
               "type": "Feature"
@@ -6877,9 +6915,11 @@ Date: Thu, 02 Jul 2015 09:46:10 GMT
               }, 
               "properties": {
                 "line": "", 
-                "name": "Romanplatz", 
+                "marker-size": "medium", 
+                "marker-symbol": "rail-metro", 
                 "platform": "", 
                 "switch_type": "tram_station", 
+                "title": "Romanplatz", 
                 "type": "switch_point"
               }, 
               "type": "Feature"
@@ -7203,8 +7243,10 @@ Date: Thu, 02 Jul 2015 09:46:10 GMT
               "type": "Point"
             }, 
             "properties": {
-              "name": "P+R Westfriedhof", 
+              "marker-size": "medium", 
+              "marker-symbol": "parking-garage", 
               "switch_type": "park_and_ride", 
+              "title": "P+R Westfriedhof", 
               "type": "switch_point"
             }, 
             "type": "Feature"
@@ -7219,9 +7261,11 @@ Date: Thu, 02 Jul 2015 09:46:10 GMT
             }, 
             "properties": {
               "line": "U1", 
-              "name": "Rotkreuzplatz", 
+              "marker-size": "medium", 
+              "marker-symbol": "rail", 
               "platform": "2", 
               "switch_type": "underground_station", 
+              "title": "Rotkreuzplatz", 
               "type": "switch_point"
             }, 
             "type": "Feature"
@@ -7236,9 +7280,11 @@ Date: Thu, 02 Jul 2015 09:46:10 GMT
             }, 
             "properties": {
               "line": "", 
-              "name": "Volkartstra\u00dfe", 
+              "marker-size": "medium", 
+              "marker-symbol": "rail-metro", 
               "platform": "", 
               "switch_type": "tram_station", 
+              "title": "Volkartstra\u00dfe", 
               "type": "switch_point"
             }, 
             "type": "Feature"
@@ -7253,9 +7299,11 @@ Date: Thu, 02 Jul 2015 09:46:10 GMT
             }, 
             "properties": {
               "line": "", 
-              "name": "Romanplatz", 
+              "marker-size": "medium", 
+              "marker-symbol": "rail-metro", 
               "platform": "", 
               "switch_type": "tram_station", 
+              "title": "Romanplatz", 
               "type": "switch_point"
             }, 
             "type": "Feature"
@@ -7264,6 +7312,28 @@ Date: Thu, 02 Jul 2015 09:46:10 GMT
         "walking_distance": 1198.81100086223, 
         "walking_duration": 15.984396678123108
       }
-    ]
+    ], 
+    "source": {
+      "geometry": {
+        "coordinates": [
+          11.5682317, 
+          48.1500053
+        ], 
+        "type": "Point"
+      }, 
+      "properties": {}, 
+      "type": "Feature"
+    }, 
+    "target": {
+      "geometry": {
+        "coordinates": [
+          11.5036395, 
+          48.1583208
+        ], 
+        "type": "Point"
+      }, 
+      "properties": {}, 
+      "type": "Feature"
+    }
   }
 }
