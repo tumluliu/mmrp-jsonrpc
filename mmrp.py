@@ -59,8 +59,7 @@ def find_multimodal_paths(options):
     inferer.load_routing_options(options)
     plans = inferer.generate_routing_plan()
     planner = MultimodalRoutePlanner()
-    rough_results = planner.batch_find_path(plans)
-    results = planner.refine_results(rough_results)
+    results = planner.batch_find_path(plans)
     return results
 
 
