@@ -40,7 +40,8 @@ from pymmrouting.inferenceengine import RoutingPlanInferer
 app = Flask(__name__)
 cors = CORS(app)
 jsonrpc = JSONRPC(app, '/api', enable_web_browsable_api=True)
-
+inferer = RoutingPlanInferer()
+planner = MultimodalRoutePlanner()
 
 @jsonrpc.method('mmrp.index')
 def index():
@@ -55,10 +56,8 @@ def echo(input):
 
 @jsonrpc.method('mmrp.findMultimodalPaths')
 def find_multimodal_paths(options):
-    inferer = RoutingPlanInferer()
     inferer.load_routing_options(options)
     plans = inferer.generate_routing_plan()
-    planner = MultimodalRoutePlanner()
     results = planner.batch_find_path(plans)
     return results
 
